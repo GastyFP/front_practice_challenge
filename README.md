@@ -1,4 +1,4 @@
-# Prueba tecnica Front Ecomsur 2023
+
 
 ### Por favor, empezar la prueba después de haber leído este documento completo.
 
@@ -74,15 +74,4 @@ Se requiere implementar un carrito de compras simple que traiga toda la info del
 
 - Recuerda la filosofía "Mobile-First Responsive Design".
 - Piensa en otras tiendas en linea que hayas usado. El publico final no es necesariamente alguien muy tecnico.
-- Si no utilizas el API local tu prueba será descartada.
 
-## Reglas de entrega
-
-1. Documenta la resolución de tu problema en un un archivo BITACORA.md, además, indica detalladamente cómo instalar las dependencias o archivos necesarios para correr tu aplicación.
-
-2. Es necesario que garantices que tu aplicación pueda correr en la máquina de otra persona.
-
-3. Sube tu respuesta a un repositorio en una cuenta tuya de GitHub, GitLab o BitBucket y da acceso a `lideres-tecnicos-front@ecomsur.com` y posiblemente a otros correos que te pida RRHH
-
-##### Asegurate que tu prueba sea `publica` para que nuestros líderes téncicos puedan accesarla.
-## ¡Mucho éxito! 💪
