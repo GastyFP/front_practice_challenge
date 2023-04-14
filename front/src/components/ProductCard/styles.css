@@ -1,0 +1,36 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+}
+.product-img{
+    width: 200px;
+    height: auto;
+}
+.product-name{
+    display: inline;
+    font-size: 12px;
+}
+.product-price{
+    font-weight: 500;
+}
+
+.stock{
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(65, 118, 66);
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 10px;
+  
+}
+
+.no-stock{
+    color: red;
+    margin-bottom: 5px;
+}
