@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ProductList from "./views/ProductList/ProductList";
 
 const App = () => {
   // -------------------------------------------------
@@ -19,8 +20,8 @@ const App = () => {
   // -------------------------------------------------
 
   return (
-    <div style={{ textAlign: "center" }}>
-      
+    <div>
+      <ProductList/>
       {/* Check to see if express server is running correctly */}
       <h5>{response}</h5>
     </div>
