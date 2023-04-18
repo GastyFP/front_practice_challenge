@@ -10,7 +10,7 @@ const ProductList = () =>{
 
     const dispatch = useDispatch()
     const products = useSelector(state=>state.products)
-    // const cart = useSelector(state=>state.cart)
+    const cart = useSelector(state=>state.cart)
 
     useEffect(()=>{
         dispatch(getProducts())
@@ -19,7 +19,7 @@ const ProductList = () =>{
     const handleAddToCart = (id)=>{
         dispatch(addToCart(id))
     }
-    // console.log(cart)
+    console.log(cart)
     
     return(
         <div>
