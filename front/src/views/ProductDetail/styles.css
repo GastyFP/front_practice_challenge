@@ -1,0 +1,35 @@
+img{
+    height: auto;
+    width: 100%;
+}
+h2{
+    color: black;
+}
+.detailContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    max-width: 375px;
+    max-height: auto;
+}
+.rating-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+.price{
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.description{
+    padding: 5px;
+    font-size: medium;
+}
+
+

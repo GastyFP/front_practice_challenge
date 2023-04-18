@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
+import {Routes , Route} from "react-router-dom"
 import ProductList from "./views/ProductList/ProductList";
+import ProductDetail from "./views/ProductDetail/ProductDetail";
+import CartDetail from "./views/CartDetail/CartDetail";
 
 const App = () => {
   // -------------------------------------------------
@@ -21,9 +24,13 @@ const App = () => {
 
   return (
     <div>
-      <ProductList/>
+      <Routes>
+        <Route path="/" element={<ProductList/>}/>
+        <Route path="/products/:id" element={<ProductDetail/>}/>
+        <Route path="/cart" element={<CartDetail/>}/>
+      </Routes>
       {/* Check to see if express server is running correctly */}
-      <h5>{response}</h5>
+      {/* <h5>{response}</h5> */}
     </div>
   );
 };

@@ -1,7 +1,8 @@
-import { GET_PRODUCTS,ADD_TO_CART } from "../actions"
+import { GET_PRODUCTS,ADD_TO_CART,GET_DETAIL,CLEAR_DETAIL } from "../actions"
 
 const initialState = {
     products: [],
+    productDetail:{},
     cart:[]
 }
 const reducer = (state = initialState , action) =>{
@@ -22,6 +23,16 @@ const reducer = (state = initialState , action) =>{
                         ...state,
                         cart: [...state.cart , action.payload]
                     }
+                }
+            case GET_DETAIL:
+                return{
+                    ...state,
+                    productDetail: action.payload
+                }
+            case CLEAR_DETAIL:
+                return{
+                    ...state,
+                    productDetail: {}
                 }
 
             default: return state
