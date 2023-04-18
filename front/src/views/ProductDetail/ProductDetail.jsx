@@ -2,7 +2,7 @@ import {useEffect} from "react"
 import {useParams} from "react-router-dom"
 import {useDispatch, useSelector} from "react-redux"
 import "./styles.css"
-import { getDetail } from "../../redux/actions"
+import { getDetail,clearDetail } from "../../redux/actions"
 
 const ProductDetail = ()=>{
     const params = useParams()
@@ -10,9 +10,14 @@ const ProductDetail = ()=>{
 
     useEffect(()=>{
         dispatch(getDetail(params.id))
-    })
+        return () =>{
+            dispatch(clearDetail())
+        }
+    },[dispatch,params.id])
+
     
-    const {name,image,price,description,category,countInStock,rating,numReviews} = useSelector(state=>state.productDetail)
+    
+    const {name,image,price,description,category,rating,numReviews} = useSelector(state=>state.productDetail)
     return(
         <div className="detailContainer">
             <img  src={`http://localhost:5050${image}`} alt={name} />
