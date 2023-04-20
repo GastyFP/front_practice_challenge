@@ -1,0 +1,19 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151515;
+    color: white;
+}
+
+.cart-link{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.home{
+    text-decoration: none;
+    color: white;
+}
+

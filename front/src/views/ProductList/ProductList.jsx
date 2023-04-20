@@ -19,7 +19,6 @@ const ProductList = () =>{
     const handleAddToCart = (id)=>{
         dispatch(addToCart(id))
     }
-    console.log(cart)
     
     return(
         <div>

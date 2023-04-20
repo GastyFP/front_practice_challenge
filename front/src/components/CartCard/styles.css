@@ -1,0 +1,32 @@
+.cc-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 375px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: auto;
+}
+
+.cc-image{
+    width: 120px;
+    height: auto;
+}
+
+.cc-name{
+    font-size: small;
+}
+.cc-quantity-input{
+    text-align: center;
+    width: 25px;
+    min-width: 25px;
+}
+.cc-remove-btn{
+ width: 30px;
+ border: 1px solid black;
+ background-color: red;
+ color: white;
+ font-weight: 700;
+}

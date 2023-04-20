@@ -3,6 +3,8 @@ export const GET_PRODUCTS = "GET_PRODUCTS";
 export const ADD_TO_CART = "ADD_TO_CART";
 export const GET_DETAIL = "GET_DETAIL";
 export const CLEAR_DETAIL = "CLEAR_DETAIL";
+export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+
 
 
 export const getProducts = ()=>{
@@ -25,6 +27,15 @@ export const addToCart =(id)=>{
         return dispatch({
             type: ADD_TO_CART,
             payload: response.data
+        })
+    }
+}
+
+export const removeFromCart = (id)=>{
+    return (dispatch) =>{
+        return dispatch({
+            type: REMOVE_FROM_CART,
+            payload: id
         })
     }
 }

@@ -1,4 +1,4 @@
-import { GET_PRODUCTS,ADD_TO_CART,GET_DETAIL,CLEAR_DETAIL } from "../actions"
+import { GET_PRODUCTS,ADD_TO_CART,GET_DETAIL,CLEAR_DETAIL, REMOVE_FROM_CART } from "../actions"
 
 const initialState = {
     products: [],
@@ -24,6 +24,12 @@ const reducer = (state = initialState , action) =>{
                         cart: [...state.cart , action.payload]
                     }
                 }
+            case REMOVE_FROM_CART:
+                return{
+                    ...state,
+                    cart: state.cart.filter(item=>item._id !== action.payload)
+                }
+
             case GET_DETAIL:
                 return{
                     ...state,

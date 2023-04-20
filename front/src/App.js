@@ -3,6 +3,7 @@ import {Routes , Route} from "react-router-dom"
 import ProductList from "./views/ProductList/ProductList";
 import ProductDetail from "./views/ProductDetail/ProductDetail";
 import CartDetail from "./views/CartDetail/CartDetail";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   // -------------------------------------------------
@@ -24,6 +25,7 @@ const App = () => {
 
   return (
     <div>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<ProductList/>}/>
         <Route path="/products/:id" element={<ProductDetail/>}/>
